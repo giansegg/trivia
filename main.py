@@ -1,12 +1,11 @@
 # Lo primero es mostrar en pantalla el texto de bienvenida para quien juegue tu trivia
 
 print("Bienvenido a mi trivia sobre: Conocimiento general ")
-print("Empecemos !!!!")
 
 # Es importante dar instrucciones sobre cómo jugar:
 print(
-    "Tienes dos oportunidades en cada pregunta. Si respondes correctamente pasaras a la siguiente pregunta.\nTendras que escribir la letra de la respuesta que crees correcta y darle click en ---> ENTER ")
-print("Al final te mostremos el puntaje obtenido y se te otorgara un rango de acuerdo al mismo.\n")
+    "Tienes dos oportunidades en cada pregunta. Si respondes correctamente pasaras a la siguiente pregunta.\nTendras que escribir la letra de la respuesta que crees correcta y darle click en ENTER ")
+print("Al final te mostremos el puntaje obtenido \n")
 
 # OJO, el \n al final de la línea 6 es para dar un "salto de línea"
 r1 = 'b'
@@ -21,12 +20,13 @@ print("a) Linus Torvalds")
 print("b) Bill Gates")
 print("c) Mark Zuckerberg")
 print("d) Dennis Ritchie")
+print("\n")
 
-respuesta_1 = input("Tu respuesta: ")
+respuesta_1 = input("Ingresa tu respuesta: ")
 
 if respuesta_1 != r1:
     print("Te queda una oportunidad, vuelve a intentarlo")
-    respuesta_1 = input("Ingresa tu respuesta: ")
+    respuesta_1 = input("Ingresa tu respuesta: \n")
 else:
     print("Respuesta correcta\n")
 
@@ -44,6 +44,7 @@ if respuesta_2 != r2:
     respuesta_2 = input("Ingresa tu respuesta: ")
 else:
     print("Respuesta correcta")
+print("\n")
 
 # Pregunta 3
 print("\n3) ¿A que equipo de fútbol se le conoce como Los diablos rojos?\n")
@@ -59,9 +60,10 @@ if respuesta_3 != r3:
     respuesta_3 = input("Ingresa tu respuesta: ")
 else:
     print("Respuesta correcta")
+print("\n")
 
 # Pregunta 4
-print("\n4) ¿¿En qué año se fundó Netflix: 1997, 2001, 2009, 2015?\n")
+print("\n4) ¿En qué año se fundó Netflix: 1997, 2001, 2009, 2015?\n")
 print("a) 1997")
 print("b) 2001")
 print("c) 2009")
@@ -74,9 +76,10 @@ if respuesta_4 != r4:
     respuesta_4 = input("Ingresa tu respuesta: ")
 else:
     print("Respuesta correcta")
+print("\n")
 
 # Pregunta 5
-print("\n5) ¿¿Cuántos días le toma a la tierra dar una vuelta a la órbita del sol?\n")
+print("\n5) ¿Cuántos días le toma a la tierra dar una vuelta a la órbita del sol?\n")
 print("a) 1")
 print("b) 240")
 print("c) 180")
@@ -89,6 +92,7 @@ if respuesta_5 != r5:
     respuesta_5 = input("Ingresa tu respuesta: ")
 else:
     print("Respuesta correcta")
+print("\n")
 
 correctas = 0
 if respuesta_1 == r1:
@@ -102,5 +106,5 @@ if respuesta_4 == r4:
 if respuesta_5 == r5:
     correctas += 1
 
-print("Tu puntaje es :", correctas*20)
+print("Tu puntaje es :", correctas*20, "con ", correctas, "preguntas correctas. ")
 
